@@ -21,7 +21,7 @@ function printAggregatedResults(combinedRes) {
     //parsedChunkMap
     let searchFileMapStr = "";
     Object.keys(combinedRes).forEach((key) => {
-        let searchNameOutput = "" + key + " --> " + combinedRes[key].length + "[";
+        let searchNameOutput = "" + key + " --> [";
         combinedRes[key].forEach((offsetData) => {
             searchNameOutput += "[lineOffset = " + offsetData.lineOffset + ",";
             searchNameOutput += "charOffset = " + offsetData.charOffset + "]" + "\n";
